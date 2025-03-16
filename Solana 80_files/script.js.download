@@ -1,0 +1,5 @@
+function copyContract() {
+    var contractAddress = document.getElementById("contract-address").innerText;
+    navigator.clipboard.writeText(contractAddress);
+    alert("Contract Address Copied!");
+}

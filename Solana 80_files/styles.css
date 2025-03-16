@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    font-family: '', serif;
+    color: #fff;
+    background-color:rgb(141, 228, 141);
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+.about {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #80c261;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+    background: #1796eb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    max-width: 350px;
+    color: #353563;
+    font-family: 'Shippori Mincho', serif;
+    text-align: left;
+}
+
+.about img {
+    max-width: 400px;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+html, body {
+    overflow-x: hidden; /* Prevents side scrolling */
+    overflow-y: auto; /* Allows vertical scrolling */
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh; /* Ensures content below is visible */
+}
+
+.about {
+    padding: 50px 20px;
+}
+
+
+.roadmap {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #73bd70;
+    color: #433bb6;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.roadmap h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Shippori Mincho', serif;
+    color: #2910b6;
+}
+
+.roadmap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.roadmap-phase {
+    background: #1a1310;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.roadmap-phase:hover {
+    transform: scale(1.05);
+}
+
+.roadmap-phase i {
+    font-size: 8rem;
+    color: #c49a6c;
+}
+
+.roadmap-phase h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.roadmap-phase ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap-phase ul li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+.roadmap-phase ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #c49a6c;
+    font-size: 1.5rem;
+}
+
+
+.how-to-buy {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #2a1e12;
+    color: #e0c097;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.how-to-buy h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Shippori Mincho', serif;
+    color: #17774f;
+}
+
+.buy-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buy-step {
+    background: #1a1310;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buy-step:hover {
+    transform: scale(1.05);
+}
+
+.buy-step i {
+    font-size: 8rem;
+    color: #c49a6c;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.buy-step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.buy-step p {
+    font-size: 1.2rem;
+    color: #e0c097;
+}
+
+
+.buy-section {
+    background: url('about.jpg') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.buy-container {
+    background: rgba(26, 19, 16, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.buy-container h2 {
+    font-size: 3rem;
+    font-family: 'Shippori Mincho', serif;
+    color: #c49a6c;
+}
+
+.buy-container p {
+    font-size: 1.2rem;
+    color: #e0c097;
+    margin-bottom: 20px;
+}
+
+.contract-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a1310;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #e0c097;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.copy-icon {
+    cursor: pointer;
+    color: #c49a6c;
+    transition: 0.3s;
+}
+
+.copy-icon:hover {
+    color: #e0c097;
+}
+
+.buy-button {
+    background: #c49a6c;
+    color: #1a1310;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.buy-button:hover {
+    background: #fff;
+}
+
+
+.tokenomics {
+    text-align: center;
+    padding: 80px 20px;
+    background: #2a1e12;
+    color: #e0c097;
+}
+
+.tokenomics h2 {
+    font-size: 3rem;
+    font-family: 'Shippori Mincho', serif;
+    color: #c49a6c;
+    margin-bottom: 30px;
+}
+
+.tokenomics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tokenomics-item {
+    background: #1a1310;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tokenomics-item:hover {
+    transform: scale(1.05);
+}
+
+.tokenomics-item i {
+    font-size: 2.5rem;
+    color: #c49a6c;
+    margin-bottom: 10px;
+}
+
+.tokenomics-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.tokenomics-item p {
+    font-size: 1.2rem;
+    color: #e0c097;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #2a1e12;
+    color: #e0c097;
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    font-family: 'Shippori Mincho', serif;
+    color: #c49a6c;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1a1310;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    font-size: 1.3rem;
+    color: #e0c097;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.05);
+    background: #c49a6c;
+    color: #1a1310;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+}
+
+
+.disclaimer-section {
+    padding: 50px 20px;
+    background: #1a1310;
+    color: #e0c097;
+}
+
+.disclaimer-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #2a1e12;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.disclaimer-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.disclaimer-content {
+    flex: 1;
+}
+
+.disclaimer-content h2 {
+    font-size: 2rem;
+    font-family: 'Shippori Mincho', serif;
+    color: #c49a6c;
+    margin-bottom: 10px;
+}
+
+.disclaimer-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.disclaimer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.disclaimer-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1310;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    color: #e0c097;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.disclaimer-links a:hover {
+    transform: scale(1.05);
+    background: #c49a6c;
+    color: #1a1310;
+}
+
+.disclaimer-links i {
+    font-size: 1.5rem;
+}
+
+
+.footer {
+    background: #1a1310;
+    padding: 40px 20px;
+    color: #e0c097;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    font-family: 'Shippori Mincho', serif;
+    color: #c49a6c;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #e0c097;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #c49a6c;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    font-size: 1.5rem;
+    color: #e0c097;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-socials a:hover {
+    transform: scale(1.1);
+    color: #c49a6c;
+}
+
+.footer-copy {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #e0c097;
+    opacity: 0.7;
+}
